@@ -35,14 +35,14 @@ def excelchange(filename1,sheetname):		#传入文件名及excel中需要被读�
             # xmlfilename.write('<h'+str(numlen+1) +' class="topic">\n<a name="'+nodeID1+'">'+text1+'</a>\n</h2>\n')
             nodeID2 = key_gen(26)
             text2=sheet.cell(rondows,6).value       #获取用例预期结果列(get test expected result)
-            xmlfilename.write('<h'+str(numlen+1) +' class="topic">\n<a name="'+nodeID2+'">'+text1+'\nResult：'+text2+'</a>\n</h3>\n')      
+                        xmlfilename.write('<h'+str(numlen+1) +' class="topic">\n<a name="'+nodeID2+'">'+text1+'\n预期结果：'+text2+'</a>\n'+'</h'+str(numlen+1)+'>\n')      
 			#插入用例内容中用例标题及用例预期结果(file adds get test case name and test expected result of the row,Using tag h)
             # xmlfilename.write('<h' + str(numlen + 1) + ' class="topic">\n<a name="' + nodeID2 + '">' + text1 + '<font style="font-weight:bold";size="1";>'+text2 +'</font>'+ '</a>\n</h3>\n')
         else:
             nodeID3 = key_gen(26)
             text3=sheet.cell(rondows,0).value       #获取标题名称(get title)
             numlen=len(re.sub("\D", "", text3))     #通过标题中数字位数判断标题层级(Determining the title level by the length of digits in the title)
-            xmlfilename.write('<h'+str(numlen) +' class="topic">\n<a name="'+nodeID3+'">'+text3+'</a>\n</h2>\n')   #写入标题行(file add title)
+            xmlfilename.write('<h'+str(numlen) +' class="topic">\n<a name="'+nodeID3+'">'+text3+'</a>\n'+'</h'+str(numlen)+'>\n')   #写入标题行(file add title)
     xmlfilename.write('</body>\n</html>')
     xmlfilename.close()
 
