@@ -49,3 +49,6 @@ def excelchange(filename1,sheetname):		#传入文件名及excel中需要被读�
 
 	
 resul=excelchange('D:\xx测试用例.xlsx','测试用例')
+
+#思路：Xmind中创建图形，以word格式导出doc文件，导出使用文档编辑工具打开，查看每个层级之间的关系，以及html脚本的结构
+#熟悉html结构后，使用pycharm编辑代码，生成相应的doc文件，导入Xmind
