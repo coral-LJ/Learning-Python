@@ -2,13 +2,13 @@
 
 
 
-INSIGHT_VALUE={
+INS_VALUE={
         "incidentEntity.do":{"occurred": {"dateUnit": "All"}, "received": {"dateUnit": "All"}, "disposed": {"dateUnit": "All"}},
-        "findGISData":{"longitudeMin":-00.4165160546875,"latitudeMin":-00.65830847607336,"longitudeMax":-00.9441039453125,"latitudeMax":-00.31099176681346,"condition":[],"wkt":""},
-        "prelist":{"todayTime":"2000-09-20","type":["ip", "if", "im", "it", "rh", "rv", "rm"],"userChoice":{"dateUnit": "MONTH", "num": 1}},
-        "incHours":{"occurredStartTime": "2000-08-09", "occurredEndTime": "2000-08-11"}
+        "findGISData":{"longitudeMin":-00.0000060546875,"latitudeMin":-00.00000847607336,"longitudeMax":-00.0000039453125,"latitudeMax":-00.00000176681346,"condition":[],"wkt":""},
+        "prelist":{"todayTime":"yyyy-mm-dd","type":["ip", "if", "im", "it", "rh", "rv", "rm"],"userChoice":{"dateUnit": "MONTH", "num": 1}},
+        "incHours":{"occurredStartTime": "yyyy-mm-dd", "occurredEndTime": "yyyy-mm-dd"}
 }
 
 
-INSIGHT_HEADER={"header":{'Content-Type': 'application/json', 'token': 'xxxxxxxx'}}
+INS_HEADER={"header":{'Content-Type': 'application/json', 'token': 'xxxxxxxx'}}
 
